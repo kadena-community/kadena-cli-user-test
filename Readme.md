@@ -1,4 +1,4 @@
-# Kadena CLI - User Guide & Feedback
+# Kadena CLI - User Feedback
 
 Welcome to the official repository for the Kadena Command Line Interface (CLI)! The Kadena CLI is a powerful, flexible tool designed to streamline the development process on the Kadena blockchain, offering developers direct access to blockchain capabilities through a simple command-line interface.
 
