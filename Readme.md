@@ -73,7 +73,7 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
     #### Scenario 4: Add an Account and Drain a Funded Account Using a Template
 
-    **Description**: Using a wallet imported from Chainweaver, add a new account through the Kadena CLI. Then, use a predefined transaction template from [Kadena's transaction library](https://github.com/kadena-io/txlib/blob/master/drain.ktpl) to drain funds from a funded account into the newly created account.
+    **Description**: Using a wallet imported from Chainweaver, add a new account through the Kadena CLI. Then, use a predefined transaction template from [Kadena's transaction library](https://github.com/kadena-io/txlib/blob/master/drain.ktpl) (store to project folder) to drain funds from a funded account into the newly created account.
 
 4.  **Document Your Experience**: As you go through the scenario, the reporter should note any difficulties encountered, areas for improvement, and overall feedback.
 
