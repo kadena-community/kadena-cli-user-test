@@ -20,6 +20,11 @@ For a complete list of commands and their descriptions, please refer to the [Kad
 ### Clone
 Clone this repository in order to be able to push your feedback form to the feedback folder.
 
+```bash
+git clone https://github.com/kadena-community/kadena-cli-user-test.git
+```
+
+
 ### To initialise 
 
 To initialise within your project, use the following command:
