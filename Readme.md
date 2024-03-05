@@ -17,6 +17,9 @@ After installation, you can access the full suite of Kadena CLI functionalities.
 
 For a complete list of commands and their descriptions, please refer to the [Kadena CLI documentation](https://github.com/kadena-community/kadena.js/blob/main/packages/tools/kadena-cli/README.md).
 
+### Clone
+Clone this repository in order to be able to push your feedback form to the feedback folder.
+
 ### To initialise 
 
 To initialise within your project, use the following command:
