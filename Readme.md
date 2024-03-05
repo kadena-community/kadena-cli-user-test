@@ -46,13 +46,13 @@ Participation in the user feedback program involves completing specified scenari
 
     #### Scenario 1: Add a New Wallet and Fund an Account on Testnet
 
-    **Description**: Create (add) new wallet using Kadena CLI, fund an account from this wallet on the Kadena testnet, and check the account's balance to confirm the transaction.
+    **Description**: Create (add) new wallet using Kadena CLI, generate a key, and fund an account from this wallet on the Kadena testnet, and check the account's balance to confirm the transaction.
 
     #### Scenario 2: Transfer Funds from One Account to Another on Testnet
 
-    **Description**: Use the Kadena CLI to transfer funds from one account to another on the Kadena testnet and verify the transaction by checking the balances of both the sender and receiver accounts.
+    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
 
-    #### Scenario 3: Import a Wallet from Chainweaver and Check Balances
+    #### Scenario 3: Import a Wallet from Chainweaver and Check Balance
 
     ## **Legacy (Chainweaver) wallet for test usage:**
 
@@ -62,13 +62,16 @@ Participation in the user feedback program involves completing specified scenari
 
     ***
 
-    **Description**: Import a wallet that was previously exported from Chainweaver into the Kadena CLI. Once imported, check the balances of the accounts associated with this wallet to ensure successful import and access to funds.
+    **Description**:
+    Import a wallet that was previously exported from Chainweaver into the Kadena CLI.
+    Once imported, check the balances of the key (5b46750a00e824891fa0a4f9cae1e31b85a19da7cfbf704224eb7649ca010e49) on index "5" to ensure successful import.
+    **The balance should be 1 kda**.
 
     #### Scenario 4: Add an Account and Drain a Funded Account Using a Template
 
     **Description**: Using a wallet imported from Chainweaver, add a new account through the Kadena CLI. Then, use a predefined transaction template from [Kadena's transaction library](https://github.com/kadena-io/txlib/blob/master/drain.ktpl) to drain funds from a funded account into the newly created account.
 
-3.  **Document Your Experience**: As you go through the scenario, the reporter should note any difficulties encountered, areas for improvement, and overall feedback.
+4.  **Document Your Experience**: As you go through the scenario, the reporter should note any difficulties encountered, areas for improvement, and overall feedback.
 
 #### Feedback Submission
 
