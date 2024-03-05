@@ -1,26 +1,23 @@
 # Kadena CLI - User Feedback
 
-Welcome to the official repository for the Kadena Command Line Interface (CLI)! The Kadena CLI is a powerful, flexible tool designed to streamline the development process on the Kadena blockchain, offering developers direct access to blockchain capabilities through a simple command-line interface.
-
 ## Installation
 
 ### Via npm
 
-To install the Kadena CLI using npm, run the following command:
+To install the Kadena CLI using npm/pnpm, run the following command:
 
 ```bash
-npm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
+npm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5 or pnpm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
 ```
 
-### Via pnpm
 
-To install using pnpm, use the following command instead:
+## Getting Started
 
-```bash
-pnpm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
-```
+After installation, you can access the full suite of Kadena CLI functionalities. The CLI provides a range of commands for different operations, such as managing wallets, accounts, and transactions, as well as creating dApps, (WIP: run your devnets / deploy / upgrade contracts ).
 
-## To initialise 
+For a complete list of commands and their descriptions, please refer to the [Kadena CLI documentation](https://www.npmjs.com/package/@kadena/kadena-cli).
+
+### To initialise 
 
 To initialise within your project, use the following command:
 
@@ -28,11 +25,7 @@ To initialise within your project, use the following command:
 kadena config init
 ```
 
-## Getting Started
 
-After installation, you can access the full suite of Kadena CLI functionalities. The CLI provides a range of commands for different operations, such as managing wallets, accounts, and transactions, as well as creating dApps, (WIP: run your devnets / deploy / upgrade contracts ).
-
-For a complete list of commands and their descriptions, please refer to the [Kadena CLI documentation](https://www.npmjs.com/package/@kadena/kadena-cli).
 
 ## User Feedback Program
 
