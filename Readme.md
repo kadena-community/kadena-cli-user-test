@@ -53,7 +53,7 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
     #### Scenario 2: Transfer Funds from One Account to Another on Testnet
 
-    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using a transaction template within the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
+    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using a transaction template (tx) within the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
 
     #### Scenario 3: Import a Wallet from Chainweaver and Check Balance
 
