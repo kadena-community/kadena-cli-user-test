@@ -20,6 +20,14 @@ To install using pnpm, use the following command instead:
 pnpm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
 ```
 
+## To initialise 
+
+To initialise within your project, use the following command:
+
+```bash
+kadena config init
+```
+
 ## Getting Started
 
 After installation, you can access the full suite of Kadena CLI functionalities. The CLI provides a range of commands for different operations, such as managing wallets, accounts, and transactions, as well as creating dApps, (WIP: run your devnets / deploy / upgrade contracts ).
