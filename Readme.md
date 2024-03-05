@@ -89,7 +89,7 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
 - **Format**: Feedback should be structured according to the provided template (see below).
 
-- **Where to Submit**: Feedback should be submitted to the `/round-one/feedback` folder in this repository. Please create a new file for your feedback report and follow the naming convention `feedback_<scenario_name>_<date>(_user1_user2_or when anonymous leave empty).md`.
+- **Where to Submit**: Feedback should be pushed to the `/round-one/feedback` folder in this repository. Please create a new file for your feedback report and follow the naming convention `feedback_<scenario_name>_<date>(_user1_user2_or when anonymous leave empty).md`.
 
 ### Feedback Template
 
