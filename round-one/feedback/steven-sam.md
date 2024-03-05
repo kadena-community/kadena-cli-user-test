@@ -20,7 +20,7 @@ stright forward cli with feedback on failure
 
 [Was it complex to execute] It was not complex, just not stright forward feedback or indications
 
-[Did you have any prior knowledge about Kadena blockchain interactions] Not for either
+[Did you have any prior knowledge about Kadena blockchain interactions] Not for either on the cli
 
 ## Challenges
 
