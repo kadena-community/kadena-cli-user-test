@@ -36,5 +36,3 @@ Error decription not being too meaningful (decryption failed)
 
 when generating a key we got decryption failed, using index: 0, action: generate public key (also with public and private) | alias: steven1 | randompassword
 This was because it was mentioning "a" password (last feedback point)
-
-## Reflection
