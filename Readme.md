@@ -38,6 +38,8 @@ Participation in the user feedback program involves completing specified scenari
 
 #### Scenario Execution
 
+Note: **we use chain 0 since the faucet there is not empty !!**
+
 1.  **Pair Up**: We will form pairs consisting of a driver and a reporter and add them to a breakout room. (this session will take 30 minutes, and will automatically be ended)
 
 2.  **Execute Scenario**: Finish all scenarios listed below.
@@ -46,11 +48,12 @@ Participation in the user feedback program involves completing specified scenari
 
     #### Scenario 1: Add a New Wallet and Fund an Account on Testnet
 
-    **Description**: Create (add) new wallet using Kadena CLI, generate a key, and fund an account from this wallet on the Kadena testnet, and check the account's balance to confirm the transaction.
+    **Description**: Create (add) new wallet using Kadena CLI, generate a key, create fund an account from this wallet using this key on the Kadena testnet (chain 0), and check the account's balance to confirm the transaction.
+
 
     #### Scenario 2: Transfer Funds from One Account to Another on Testnet
 
-    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
+    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using a transaction template within the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
 
     #### Scenario 3: Import a Wallet from Chainweaver and Check Balance
 
