@@ -1,4 +1,4 @@
-# Kadena CLI - User Feedback
+# Kadena CLI - User Feedback (Round 2)
 
 ## Installation
 
@@ -7,14 +7,14 @@
 To install the Kadena CLI using npm/pnpm, run the following command:
 
 ```bash
-npm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
+npm  install  -g  @kadena/kadena-cli@1.0.0-rc.2
 ```
-or 
+
+or
 
 ```bash
-pnpm  install  -g  @kadena/kadena-cli@0.0.1-alpha.5
+pnpm  install  -g  @kadena/kadena-cli@1.0.0-rc.2
 ```
-
 
 ## Getting Started
 
@@ -23,14 +23,14 @@ After installation, you can access the full suite of Kadena CLI functionalities.
 For a complete list of commands and their descriptions, please refer to the [Kadena CLI documentation](https://github.com/kadena-community/kadena.js/blob/main/packages/tools/kadena-cli/README.md).
 
 ### Clone
+
 Clone this repository in order to be able to push your feedback form to the feedback folder.
 
 ```bash
 git clone https://github.com/kadena-community/kadena-cli-user-test.git
 ```
 
-
-### To initialise 
+### To initialise
 
 To initialise within your project, use the following command:
 
@@ -38,7 +38,11 @@ To initialise within your project, use the following command:
 kadena config init
 ```
 
+Running config init, creates a account, a wallet, and your first key, see docs for more info:
 
+```
+https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-config
+```
 
 ## User Feedback Program
 
@@ -58,43 +62,111 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
 2.  **Execute Scenario**: Finish all scenarios listed below.
 
-    #### Scenarios:
+---
 
-    #### Scenario 1: Add a New Wallet and Fund an Account on Testnet
+### **Scenarios for Testing Using Kadena CLI on Testnet**
 
-    **Description**: Create (add) new wallet using Kadena CLI, generate a key, create fund an account from this wallet using this key on the Kadena testnet (chain 0), and check the account's balance to confirm the transaction.
+#### **Scenario 1: Add and Fund Accounts on Testnet**
 
+**Objective**: Utilize the Kadena CLI to create and fund two accounts on the Testnet. Note that the `config init` command typically creates an initial account. If `config init` has been used, only one additional account needs to be created. If `config init` has not been used, the steps should be repeated to create two accounts.
 
-    #### Scenario 2: Transfer Funds from One Account to Another on Testnet
+**Steps**:
 
-    **Description**: Use the Kadena CLI to transfer funds from one account to another by making a transaction using a transaction template (tx) within the CLI on the Kadena testnet. Verify the transaction by checking the balances of both the sender and receiver accounts.
+1. **Add an Account**: Create a new account using the Kadena CLI, if less than two accounts exist.
+2. **Fund the Account**: Send funds to this account on chain 0.
+3. **Check Balance**: Verify the account balance to confirm the transaction.
+4. **Repeat for Second Account (if necessary)**: If only one account exists after using `config init` or if no initial account was created, repeat the above steps to ensure a total of two accounts are set up.
 
-    #### Scenario 3: Import a Wallet from Chainweaver and Check Balance
+[More details on the `account` command](https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-account)
 
-    ## **Legacy (Chainweaver) wallet for test usage:**
+---
 
-    #### Mnemonic Phrase:
+#### **Scenario 2: Generate Keys from a Wallet**
 
-    ##### script victory human funny onion ketchup tent record square custom snack lizard
+**Objective**: Generate keys from a wallet using the Kadena CLI.
 
-    ***
+**Steps**:
 
-    **Description**:
-    Import a wallet that was previously exported from Chainweaver into the Kadena CLI.
-    Once imported, check the balances of the key (5b46750a00e824891fa0a4f9cae1e31b85a19da7cfbf704224eb7649ca010e49) on index "5" to ensure successful import.
-    **The balance should be 1 kda**.
+1. **Generate Keys**: If no wallet exists, create one first, then generate keys.
+2. **List Keys**: Display the available keys.
 
-    #### Scenario 4: Add an Account and Drain a Funded Account Using a Template
+[More details on the `wallet` command](https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-wallet)
 
-    **Description**: Using a wallet imported from Chainweaver, add a new account through the Kadena CLI. Then, use a predefined transaction template from [Kadena's transaction library](https://github.com/kadena-io/txlib/blob/master/drain.ktpl) (store to project folder) to drain funds from a funded account into the newly created account.
+---
 
-4.  **Document Your Experience**: As you go through the scenario, the reporter should note any difficulties encountered, areas for improvement, and overall feedback.
+#### **Scenario 3: Change Wallet Password and Generate Keys**
+
+**Objective**: Update the password of a wallet and generate keys using the new security credentials.
+
+**Steps**:
+
+1. **Change Password**: Update the password for an existing wallet.
+2. **Generate Keys**: Use the new password to generate keys.
+
+---
+
+#### **Scenario 4: Import a Wallet from Chainweaver and Check Balance**
+
+**Objective**: Import a wallet from Chainweaver using the Kadena CLI and check the key balance.
+
+**Legacy Wallet Details**:
+
+- **Mnemonic Phrase**: "script victory human funny onion ketchup tent record square custom snack lizard"
+
+**Steps**:
+
+1. **Import Wallet**: Use the `--legacy` flag to import the wallet.
+2. **Check Balance**: Confirm the balance for the key index "5". Expected balance: 1 KDA.
+
+---
+
+#### **Scenario 5: Transfer Funds on Testnet**
+
+**Objective**: Perform a fund transfer between two accounts using the Kadena CLI.
+
+**Steps**:
+
+1. **Add Transaction**: Select and use the transfer template.
+2. **Sign Transaction**: Authenticate the transaction.
+3. **Test Transaction**: Verify the transaction functionality.
+4. **Send Transaction**: Execute the transfer.
+5. **Check Transaction Status**: Monitor the status of the transaction and confirm the balances of both sender and receiver accounts.
+
+[More details on the `tx` command](https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-tx)
+
+---
+
+#### **Scenario 6: Delete an Account**
+
+**Objective**: Remove an existing account using the Kadena CLI.
+
+**Steps**:
+
+1. **Delete Account**: Permanently remove the selected account.
+2. **List Accounts**: Display the remaining accounts to confirm deletion.
+
+---
+
+#### **Scenario 7: Generate Random Keys**
+
+**Objective**: Create random keys using the Kadena CLI that are not associated with any wallet.
+
+**Steps**:
+
+1. **Generate Keys**: Produce random keys.
+2. **List Keys**: Display all generated keys.
+
+[More details on the `key` command](https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-key)
+
+---
+
+3.  **Document Your Experience**: As you go through the scenario, the reporter should note any difficulties encountered, areas for improvement, and overall feedback.
 
 #### Feedback Submission
 
 - **Format**: Feedback should be structured according to the provided template (see below).
 
-- **Where to Submit**: Feedback should be pushed to the `/round-one/feedback` folder in this repository. Please create a new file for your feedback report and follow the naming convention `feedback_<scenario_name>_<date>(_user1_user2_or when anonymous leave empty).md`.
+- **Where to Submit**: Feedback should be pushed to the `/round-two/feedback` folder in this repository. Please create a new file for your feedback report and follow the naming convention `feedback_<scenario_name>_<date>(_user1_user2_or when anonymous leave empty).md`.
 
 ### Feedback Template
 
