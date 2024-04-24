@@ -7,25 +7,32 @@ Reporter: [Reporter's Name]
 ## **Scenario 1: Add and Fund Accounts on Testnet**
 
 **Expectations**
-
-[What did you expect to happen before starting the scenario?]
+The account is created on a certain network and it is confusing how accounts are related to networks.
+kadena account create to create a keyset for you or to require a fungible account name.
 
 **Outcome**
 
 [Did the driver successfully complete the scenario?]
+Yes
 
 [Was it complex to execute]
+Moderately
 
 [Did you have any prior knowledge about Kadena blockchain interactions]
+Yes
 
 **Challenges**
 
-[Describe any difficulties faced during the scenario. Please be as explicit as
-possible]
+I had to create a new wallet to add an extra account.
+Using the first key from the wallet to create a new account with did not work.
 
 **Additional Feedback**
 
-[Any other feedback or suggestions for improvement.]
+kadena accounts create docs indicate that it creates an account on mainnet.
+kadena accounts details should not ask you for the network the account is on.
+I would like to see details of all of my accounts at once.
+The relation between keys, accounts and wallets is a bit obscure.
+It would be nice if the add-from-wallet command could create a key for you instead of having to select an existing one.
 
 **Errors**
 
@@ -43,6 +50,8 @@ expectations and the actual outcome.]
 
 **Outcome**
 
+Success
+
 **Challenges**
 
 **Additional Feedback**
@@ -55,11 +64,19 @@ expectations and the actual outcome.]
 
 **Expectations**
 
+Select account by alias
+
 **Outcome**
 
 **Challenges**
 
+Account selection is unclear
+
 **Additional Feedback**
+
+Why can I not enter an integer amount? It is annoying.
+When testing the transaction, part of the txSignedTransaction result is black and not visible in a terminal with a black background.
+The result of tx send redundantly displays the request key.
 
 **Errors**
 
@@ -70,6 +87,8 @@ expectations and the actual outcome.]
 **Expectations**
 
 **Outcome**
+
+Success
 
 **Challenges**
 
@@ -85,6 +104,8 @@ expectations and the actual outcome.]
 
 **Outcome**
 
+Successfully imported but difficult to view the details after importing.
+
 **Challenges**
 
 **Additional Feedback**
@@ -99,6 +120,8 @@ expectations and the actual outcome.]
 
 **Outcome**
 
+Success
+
 **Challenges**
 
 **Additional Feedback**
@@ -112,6 +135,8 @@ expectations and the actual outcome.]
 **Expectations**
 
 **Outcome**
+
+Success
 
 **Challenges**
 
