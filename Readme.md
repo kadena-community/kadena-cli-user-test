@@ -18,7 +18,7 @@ pnpm  install  -g  @kadena/kadena-cli@1.0.0-rc.2
 
 ## Getting Started
 
-After installation, you can access the full suite of Kadena CLI functionalities. The CLI provides a range of commands for different operations, such as managing wallets, accounts, and transactions, as well as creating dApps, (WIP: run your devnets / deploy / upgrade contracts ).
+After installation, you can access the full suite of Kadena CLI functionalities. The CLI provides a range of commands for different operations, such as managing wallets, accounts, and transactions, as well as creating dApps, (PLANNED: run your devnets / deploy / upgrade contracts).
 
 For a complete list of commands and their descriptions, please refer to the [Kadena CLI documentation](https://github.com/kadena-community/kadena.js/blob/main/packages/tools/kadena-cli/README.md).
 
