@@ -7,13 +7,13 @@
 To install the Kadena CLI using npm/pnpm, run the following command:
 
 ```bash
-npm  install  -g  @kadena/kadena-cli@1.0.0-rc.2
+npm install -g @kadena/kadena-cli@1.0.0-rc.2
 ```
 
 or
 
 ```bash
-pnpm  install  -g  @kadena/kadena-cli@1.0.0-rc.2
+pnpm install -g @kadena/kadena-cli@1.0.0-rc.2
 ```
 
 ## Getting Started
