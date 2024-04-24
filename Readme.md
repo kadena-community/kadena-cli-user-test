@@ -62,13 +62,15 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
 2.  **Execute Scenario**: Finish all scenarios listed below.
 
+3.  **Write down Feedback**: The reporter will document the experience, including any challenges faced, areas for improvement, and overall feedback (Optionally you can use the [template below](#feedback-template)).
+
 ---
 
 ### **Scenarios for Testing Using Kadena CLI on Testnet**
 
 #### **Scenario 1: Add and Fund Accounts on Testnet**
 
-**Objective**: Utilize the Kadena CLI to create and fund two accounts on the Testnet. Note that the `config init` command typically creates an initial account. If `config init` has been used, only one additional account needs to be created. If `config init` has not been used, the steps should be repeated to create two accounts.
+**Objective**: Utilize the Kadena CLI to create and fund **two accounts** on the Testnet. Note that the `config init` command typically creates an initial account. If `config init` has been used, only one additional account needs to be created. If `config init` has not been used, the steps should be repeated to create the second account.
 
 **Steps**:
 
