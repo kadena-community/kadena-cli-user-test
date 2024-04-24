@@ -62,7 +62,8 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
 2.  **Execute Scenario**: Finish all scenarios listed below.
 
-3.  **Write down Feedback**: The reporter will document the experience, including any challenges faced, areas for improvement, and overall feedback (Optionally you can use the [template below](#feedback-template)).
+3.  **Write down Feedback**: The reporter will document the experience, including any challenges faced, areas for improvement, and overall feedback.
+   > The feedback form is in [./round-two/feedback_form.md](./round-two/feedback_form.md)
 
 ---
 
@@ -169,50 +170,6 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 - **Format**: Feedback should be structured according to the provided template (see below).
 
 - **Where to Submit**: Feedback should be pushed to the `/round-two/feedback` folder in this repository. Please create a new file for your feedback report and follow the naming convention `feedback_<scenario_name>_<date>(_user1_user2_or when anonymous leave empty).md`.
-
-### Feedback Template
-
-```markdown
-# Kadena CLI Feedback
-
-## Scenario
-
-[Name of the scenario]
-
-## Participants
-
-Driver: [Driver's Name]
-
-Reporter: [Reporter's Name]
-
-## Expectations
-
-[What did you expect to happen before starting the scenario?]
-
-## Outcome
-
-[Did the driver successfully complete the scenario?]
-
-[Was it complex to execute]
-
-[Did you have any prior knowledge about Kadena blockchain interactions]
-
-## Challenges
-
-[Describe any difficulties faced during the scenario. Please be as explicit as possible]
-
-## Additional Feedback
-
-[Any other feedback or suggestions for improvement.]
-
-## Errors
-
-[Did you encounter any errors, please provide the error or stacktrace if any given]
-
-## Reflection
-
-[Was the outcome as expected? Reflect on any differences between your expectations and the actual outcome.]
-```
 
 ## Conclusion
 
