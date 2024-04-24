@@ -94,33 +94,7 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 
 ---
 
-#### **Scenario 3: Change Wallet Password and Generate Keys**
-
-**Objective**: Update the password of a wallet and generate keys using the new security credentials.
-
-**Steps**:
-
-1. **Change Password**: Update the password for an existing wallet.
-2. **Generate Keys**: Use the new password to generate keys.
-
----
-
-#### **Scenario 4: Import a Wallet from Chainweaver and Check Balance**
-
-**Objective**: Import a wallet from Chainweaver using the Kadena CLI and check the key balance.
-
-**Legacy Wallet Details**:
-
-- **Mnemonic Phrase**: "script victory human funny onion ketchup tent record square custom snack lizard"
-
-**Steps**:
-
-1. **Import Wallet**: Use the `--legacy` flag to import the wallet.
-2. **Check Balance**: Confirm the balance for the key index "5". Expected balance: 1 KDA.
-
----
-
-#### **Scenario 5: Transfer Funds on Testnet**
+#### **Scenario 3: Transfer Funds on Testnet**
 
 **Objective**: Perform a fund transfer between two accounts using the Kadena CLI.
 
@@ -133,6 +107,32 @@ Note: **we use chain 0 since the faucet there is not empty !!**
 5. **Check Transaction Status**: Monitor the status of the transaction and confirm the balances of both sender and receiver accounts.
 
 [More details on the `tx` command](https://github.com/kadena-community/kadena.js/tree/main/packages/tools/kadena-cli#kadena-tx)
+
+---
+
+#### **Scenario 4: Change Wallet Password and Generate Keys**
+
+**Objective**: Update the password of a wallet and generate keys using the new security credentials.
+
+**Steps**:
+
+1. **Change Password**: Update the password for an existing wallet.
+2. **Generate Keys**: Use the new password to generate keys.
+
+---
+
+#### **Scenario 5: Import a Wallet from Chainweaver and Check Balance**
+
+**Objective**: Import a wallet from Chainweaver using the Kadena CLI and check the key balance.
+
+**Legacy Wallet Details**:
+
+- **Mnemonic Phrase**: "script victory human funny onion ketchup tent record square custom snack lizard"
+
+**Steps**:
+
+1. **Import Wallet**: Use the `--legacy` flag to import the wallet.
+2. **Check Balance**: Confirm the balance for the key index "5". Expected balance: 1 KDA.
 
 ---
 
